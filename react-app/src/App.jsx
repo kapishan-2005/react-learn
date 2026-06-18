@@ -5,13 +5,16 @@ import heroImg from './assets/hero.png'
 import './App.css'
 import Navbar from './navbar'
 import Footer from "./footer"
+import Card from "./card"
 
 function App() {
 
   return (
 <>
-     <Navbar/>
-     <Footer/>
+     <Card/>
+          <Card/>
+     <Card/>
+
 </>
   );
 }
