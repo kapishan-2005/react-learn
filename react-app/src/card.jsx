@@ -2,7 +2,7 @@ import IMG from "./assets/html.webp"
 const card1 = "HTML"
 
 function Card(props) {
-    if(props.show == true){
+   
          return(
         <div className="card">
             <img src={IMG}  alt=""/>
@@ -10,13 +10,6 @@ function Card(props) {
             <p>{props.price}</p>
         </div>
     );
-    }
-
-    else{
-         return(
-        <div className="card">Course not available</div>
-         )
-    }
   
 }
 
