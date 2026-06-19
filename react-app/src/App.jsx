@@ -11,12 +11,14 @@ function App() {
 
   return (
 <>
-     <Card/>
-          <Card/>
-     <Card/>
+     <Card name="html" price="LKR90" show={true}/>
+     <Card  name="css" price="LKR50" show={true}/>
+     <Card name="js" price="LKR200" show={true}/>
 
 </>
   );
 }
+
+
 
 export default App
