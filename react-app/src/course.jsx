@@ -33,7 +33,7 @@ function CourseList(){
         }
     ]
     courses.sort((x,y) => y.price - x.price)
-const bestCourses = courses.filter((course) => course.price > 200)
+    const bestCourses = courses.filter((course) => course.price > 200)
     const coursesList = bestCourses.map((course) => <Card key={course.id} name={course.name} price={course.price} image={course.image} rating = {course.rating}/>)
     return(
         <>

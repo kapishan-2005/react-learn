@@ -3,12 +3,13 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import CourseList from './course'
+import Card from "./card"
 
 function App() {
 
   return (
 <>
-    <CourseList/>
+    <Card name="html" price="$99"/>
 </>
   );
 }
