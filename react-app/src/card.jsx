@@ -4,17 +4,18 @@ import { useState } from "react";
 
 function Card(props) {
     const [purchased, setPurchased] = useState(false);
-
-    function buyCourse(discount){
+    const [discount , setDiscount] = useState(props.price)
+    function buyCourse(amt){
         console.log(props.name ," purchased with ", discount , "%discount");
         setPurchased(true);   
+        setDiscount(discount-amt);
     }   
     return(
-        <div className="card">
+       props.name && <div className ="card">
             <img src={IMG}  alt=""/>
             <h2>{props.name}</h2>
-            <p>{props.price}</p>
-            <button onClick={(event)=> {buyCourse(20)}}>Buy now</button>
+            <p>{discount}</p>
+            <button onClick={()=> buyCourse(20)}>Discount</button>
             <p>{purchased ? 'Already purchased' : "Get it Now"}</p>
         </div>
     );

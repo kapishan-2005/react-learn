@@ -9,7 +9,7 @@ function App() {
 
   return (
 <>
-    <Card name="html" price="$99"/>
+   <CourseList/>
 </>
   );
 }
